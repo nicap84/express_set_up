@@ -1,2 +1,10 @@
 # express_set_up
-All setups for a NodeJS project with Express
+
+This is a guide project for a quick setup of Express.
+
+Stack:
+- TypeScript + Node
+- Express
+- Vitest + Supertest
+- Morgan (loggin)
+- Prisma (Postgres db: https://postgresapp.com/)
