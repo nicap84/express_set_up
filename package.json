@@ -9,7 +9,14 @@
     "dev": "tsx watch src/index.ts",
     "format": "prettier --write .",
     "lint": "eslint",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prisma:deploy": "npx prisma migrate deploy && npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev --name",
+    "prisma:push": "npx prisma db push && npx prisma generate",
+    "prisma:seed": "tsx ./prisma/seed.ts",
+    "prisma:setup": "prisma generate && prisma migrate deploy && prisma db push",
+    "prisma:studio": "npx prisma studio",
+    "prisma:wipe": "npx prisma migrate reset --force && npx prisma db push"
   },
   "author": "Maria",
   "license": "ISC",
